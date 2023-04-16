@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textadventure"
+version = "0.0.3"
+authors = [
+  { name="Matthew James", email="mattdestroyerpro@gmail.com" }
+]
+description = "A small package to make creating your own text adventure games easy!"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "getkey"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/Matt-DESTROYER/TextAdventures"
