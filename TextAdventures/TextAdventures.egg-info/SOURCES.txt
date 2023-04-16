@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+TextAdventures.egg-info/PKG-INFO
+TextAdventures.egg-info/SOURCES.txt
+TextAdventures.egg-info/dependency_links.txt
+TextAdventures.egg-info/top_level.txt
+textadventures/src/__init__.py
+textadventures/src/__main__.py
+textadventures/src/input.py
+textadventures/src/menu.py
+textadventures/src/output.py
+textadventures/src/timing.py
