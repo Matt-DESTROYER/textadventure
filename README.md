@@ -5,12 +5,12 @@ This library aims to enable you to easily create your own text adventure games!
 ## Getting started
 Simply install the library using `pip` or your package manager:
 ```shell
-pip install textadventures
+pip install textadventure
 ```
 
 Import the package in your code:
 ```python
-import textadventures
+import textadventure
 ```
 
 And you're good to go!
@@ -20,19 +20,19 @@ The scene language enables you to create your own text adventure games with almo
 
 To load scenes from a file, use the `load_scenes` method:
 ```python
-import textadventures
+import textadventure
 
-textadventures.load_scene("Scenes.txt")
+textadventure.load_scene("Scenes.txt")
 ```
 You can load scenes from any generic text file.
 You can load scenes from as many files as you want, the only thing to remember is that the first scene in the first file you load will become the starting scene.
 
 To run your game using those scenes, call the `start_game` method:
 ```python
-import textadventures
+import textadventure
 
-textadventures.load_scene("Scenes.txt")
-textadventures.start_game()
+textadventure.load_scene("Scenes.txt")
+textadventure.start_game()
 ```
 
 And that's all the code you will need to run your text adventure games!
