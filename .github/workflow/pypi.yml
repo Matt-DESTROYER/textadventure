@@ -1,0 +1,29 @@
+name: PYPI Publish
+# attempt to publish every commit to PYPI (will only succeed when version is bumped)
+on:
+  push:
+    branches:
+      - main
+defaults:
+  run:
+    shell: bash
+# steps
+jobs:
+  # publish to PYPI (will fail if version not bumped)
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: lts/*
+      - run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install --upgrade build
+          python3 -m build
+          python3 -m pip install --upgrade twine
+          python3 -m twine check --strict dist/*
+          python3 -m twine upload --repository pypi dist/*
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
