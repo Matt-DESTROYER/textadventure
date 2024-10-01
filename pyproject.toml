@@ -1,16 +1,16 @@
 [build-system]
-requires = ["setuptools>=61.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "textadventure"
-version = "0.0.7"
+version = "0.0.8"
 authors = [
   { name="Matthew James", email="mattdestroyerpro@gmail.com" }
 ]
 description = "A small package to make creating your own text adventure games easy!"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 dependencies = [
   "getkey"
 ]
@@ -20,4 +20,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Matt-DESTROYER/TextAdventures"
+Homepage = "https://github.com/Matt-DESTROYER/textadventure"
+Issues = "https://github.com/Matt-DESTROYER/textadventure/issues"
