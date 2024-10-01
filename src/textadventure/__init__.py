@@ -1,4 +1,4 @@
-__version__ = "0.0.8"
+__version__ = "0.0.9"
 
 from .input import readKey, readLine, keys, init_input
 from .menu import menu
